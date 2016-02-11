@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "bear schedule",
+  "version": "1.0.0",
+
+  "description": "checks berkeley schedule",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+  "permissions": [
+    "https://telebears.berkeley.edu/enrollment-osoc/*",
+    "http://schedule.berkeley.edu/*/",
+    "http://osoc.berkeley.edu/",
+    "activeTab",
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_icon": {
+      "19": "icon.png"
+    },
+    "default_popup": "schedule.html",
+    "scripts": ["jquery-1.11.1.js", "schedule.js"]
+  },
+
+  "options_page": "options.html"
+}  
